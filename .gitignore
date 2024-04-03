@@ -32,3 +32,6 @@
 *.app
 
 /bazel-*
+
+# Default output of CRUD
+file1.txt

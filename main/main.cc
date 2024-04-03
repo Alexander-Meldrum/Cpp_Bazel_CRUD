@@ -1,20 +1,30 @@
 /* Use CRUD functions */
+#include "lib/create.h"
+#include "lib/read.h"
+#include "lib/update.h"
+#include "lib/delete.h"
 #include <iostream>
 #include <fstream>
-using std::string;
+using namespace std;
 
-
-// Create
-
-// Read and print
-
-// Update
-
-// Read and print again
-
-// Delete
+const string MyFileName = "file1.txt";
 
 int main()
 {
-    std::cout << "Hello World" << std::endl;
+    std::cout << "Hello, lets CRUD!" << std::endl;
+
+    // CREATE
+    create(MyFileName);
+
+    // READ and print
+    read_and_count_chars(MyFileName);
+
+    // UPDATE
+    append_text(MyFileName, "\nExtra Text Appended!");
+
+    // Read and print again
+    read_and_count_chars(MyFileName);
+
+    // DELETE
+    delete_file(MyFileName);
 }
