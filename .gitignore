@@ -35,3 +35,6 @@
 
 # Default output of CRUD
 file1.txt
+
+# vs code settings
+.vscode/*
